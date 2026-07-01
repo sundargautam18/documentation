@@ -1,53 +1,138 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Annapurna Art Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#FF5959",
+    "light": "#FF8080",
+    "dark": "#D94040"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
+  "fonts": {
+    "heading": {
+      "family": "Darker Grotesque"
+    },
+    "body": {
+      "family": "Archivo"
+    }
+  },
   "navigation": {
-    "pages": [
+    "groups": [
       {
-        "group": "Getting Started",
+        "group": "Introduction",
+        "icon": "sparkles",
         "pages": [
           "index",
-          "quickstart"
+          "introduction/about",
+          "introduction/key-features",
+          "introduction/platform-overview"
+        ]
+      },
+      {
+        "group": "Getting Started",
+        "icon": "rocket",
+        "pages": [
+          "getting-started/creating-an-account",
+          "getting-started/logging-in",
+          "getting-started/user-dashboard",
+          "getting-started/navigation-overview"
+        ]
+      },
+      {
+        "group": "Buyer Guide",
+        "icon": "shopping-cart",
+        "pages": [
+          "buyer-guide/browsing-artwork",
+          "buyer-guide/searching-filtering",
+          "buyer-guide/viewing-artwork-details",
+          "buyer-guide/adding-to-wishlist",
+          "buyer-guide/purchasing-artwork",
+          "buyer-guide/checkout-process",
+          "buyer-guide/payment-methods",
+          "buyer-guide/shipping-information",
+          "buyer-guide/order-tracking"
+        ]
+      },
+      {
+        "group": "Artist Guide",
+        "icon": "palette",
+        "pages": [
+          "artist-guide/becoming-an-artist",
+          "artist-guide/artist-registration",
+          "artist-guide/artist-dashboard",
+          "artist-guide/uploading-artwork",
+          "artist-guide/managing-artwork",
+          "artist-guide/updating-artwork",
+          "artist-guide/artwork-pricing",
+          "artist-guide/portfolio-management",
+          "artist-guide/orders-and-sales"
+        ]
+      },
+      {
+        "group": "Exhibitions",
+        "icon": "images",
+        "pages": [
+          "exhibitions/virtual-exhibitions",
+          "exhibitions/featured-collections",
+          "exhibitions/participating-in-exhibitions"
+        ]
+      },
+      {
+        "group": "Account Management",
+        "icon": "user-gear",
+        "pages": [
+          "account-management/profile-settings",
+          "account-management/password-management",
+          "account-management/notifications",
+          "account-management/wishlist",
+          "account-management/order-history"
+        ]
+      },
+      {
+        "group": "Support",
+        "icon": "life-ring",
+        "pages": [
+          "support/faq",
+          "support/troubleshooting",
+          "support/contact-support"
         ]
       }
     ],
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Visit Annapurna Art",
+          "href": "https://annapurnaart.com",
+          "icon": "globe"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Sell Your Art",
+          "href": "https://annapurnaart.com/footer/sell-your-artworks",
+          "icon": "palette"
+        },
+        {
+          "anchor": "Contact Support",
+          "href": "https://annapurnaart.com/contact-us",
+          "icon": "life-ring"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Sell Your Art",
+        "href": "https://annapurnaart.com/footer/sell-your-artworks"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Browse Artwork",
+      "href": "https://annapurnaart.com/category/all/arts"
     }
   },
   "contextual": {
@@ -61,12 +146,5 @@
       "cursor",
       "vscode"
     ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
   }
 }
